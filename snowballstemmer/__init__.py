@@ -46,7 +46,8 @@ def algorithms():
     if cext_available:
         return Stemmer.language()
     else:
-        return list(_languages.key())
+        #return list(_languages.key())
+        return list(_languages.keys())
 
 def stemmer(lang):
     if cext_available:
